@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bicycle</h1>
+<form action="#" th:action="@{/bicycle}" th:object="${bicycle}" method="post">
+    <p>Serial Number: <input type="text" th:field="*{serialNumber}" /></p>
+    <p>Brand: <input type="text" th:field="*{brand}" /></p>
+    <p>Bike model: <input type="text" th:field="*{bikeModel}" /></p>
+    <p>Color: <input type="text" th:field="*{color}" /></p>
+    <p>Image Url: <input type="text" th:field="*{imageUrl}" /></p>
+    <p> <input type="submit" value="Submit" /></p>
+</form>
+
+
+
+</body>
+</html>
